@@ -1,0 +1,12 @@
+<div class="content">
+  <!-- Data biding in Angular functions exactly like Vue. -->
+  <!-- Anything that is changed in the template is reactive and is automatically changed -->
+  <!-- In React doesn't work like that, we need to use a function to set the value of the variable and then the changed is shown on template -->
+  <form>
+    <label for="Name">Name</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" />
+
+    <button type="submit">submit</button>
+  </form>
+  <p>My name is: {{ name }}</p>
+</div>

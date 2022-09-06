@@ -1,0 +1,9 @@
+<div class="content">
+  <!-- if else -->
+  <p *ngIf="canShown; else wah">if-render works!</p>
+
+  <!-- "a component" named wah -->
+  <ng-template #wah>
+    <p>WAH</p>
+  </ng-template>
+</div>

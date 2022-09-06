@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --white: #f0f1f2;
+  --bg-dark: #1e2126;
+  --bg-medium: #262a30;
+  --bg-lighter: #363c44;
+  --accent: #ffd919;
+  --accent2: #e63ac8;
+  --accent3: #50b6ff;
+
+  --extra-small-size-fluid: clamp(0.5rem, 1vw, 0.75rem);
+  --small-size-fluid: clamp(1rem, 2vw, 1.5rem);
+  --medium-size-fluid: clamp(2rem, 4vw, 3rem);
+  --large-size-fluid: clamp(2.5rem, 6vw, 4.5rem);
+  --extra-large-size-fluid: clamp(8rem, 10vw + 1rem, 10rem);
+
+  --border-radius: 8px;
+
+  --box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.content {
+  padding-block: var(--small-size-fluid);
+
+  border-bottom: 1px solid var(--bg-lighter);
+}

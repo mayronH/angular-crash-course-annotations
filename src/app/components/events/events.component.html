@@ -1,0 +1,5 @@
+<div class="content">
+  <p *ngIf="showP">My Paragraph</p>
+  <!-- the click event need to call the function, is not just (click)="showMessage" -->
+  <button (click)="showMessage()">Hide/Show Paragraph</button>
+</div>

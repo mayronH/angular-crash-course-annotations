@@ -1,0 +1,14 @@
+<div class="content">
+  <h2>Animals</h2>
+
+  <ul>
+    <!-- we need to declare a variable(var/let) to use the animal in angular -->
+    <p>{{ animalDetails }}</p>
+    <li *ngFor="let animal of animals">
+      <a routerLink="/list/{{ animal.id }}">{{ animal.name }}</a> -
+      {{ animal.type }}
+      <button (click)="showAge(animal)">show age</button>
+      <button (click)="removeAnimal(animal)">delete</button>
+    </li>
+  </ul>
+</div>
